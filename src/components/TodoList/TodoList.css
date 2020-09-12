@@ -1,0 +1,24 @@
+.todo {
+  margin: 30px 0;
+  width: 100%;
+  background: #17242a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 25px;
+  opacity: 0.5;
+  transition: all linear 0.5s;
+}
+
+.todo:hover {
+  opacity: 1;
+}
+
+.success {
+  display: block;
+  width: 100%;
+  padding: 25px;
+  color: white;
+  text-align: center;
+}
