@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { timeFormat } from "../../config";
+import Title from "../Title/Title";
 import TodoForm from "../TodoForm/TodoForm";
 import TodoList from "../TodoList/TodoList";
 import Popup from "../Popup/Popup";
@@ -94,24 +95,27 @@ const App = () => {
   }, [editTodo]);
 
   return (
-    <div className="App">
-      <div className="container">
-        <TodoForm
-          addTodo={addTodo}
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-        />
-        <TodoList todos={todos} editTodo={editTodo} removeTodo={removeTodo} />
-        <Popup
-          modalIsOpen={modalIsOpen}
-          closeModal={closeModal}
-          currentTodo={currentTodo}
-          updateTodo={updateTodo}
-          setInputValue={setInputValue}
-        />
-        {todoUpdated && <em className="success">Updated successfully!</em>}
+    <>
+      <Title type="Todo" />
+      <div className="App">
+        <div className="container">
+          <TodoForm
+            addTodo={addTodo}
+            inputValue={inputValue}
+            setInputValue={setInputValue}
+          />
+          <TodoList todos={todos} editTodo={editTodo} removeTodo={removeTodo} />
+          <Popup
+            modalIsOpen={modalIsOpen}
+            closeModal={closeModal}
+            currentTodo={currentTodo}
+            updateTodo={updateTodo}
+            setInputValue={setInputValue}
+          />
+          {todoUpdated && <em className="success">Updated successfully!</em>}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
