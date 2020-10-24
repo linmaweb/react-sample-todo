@@ -1,7 +1,8 @@
 import React from "react";
-import "./TodoForm.css";
+import { useTodo } from "./TodoHooksContext";
 
-const TodoForm = ({ addTodo, inputValue, setInputValue }) => {
+const TodoForm = () => {
+  const { addTodo, inputValue, setInputValue } = useTodo();
   return (
     <form onSubmit={addTodo}>
       <input

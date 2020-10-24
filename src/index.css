@@ -42,3 +42,129 @@ h2 {
   margin-bottom: 0.4rem;
   color: white;
 }
+
+.app {
+  background: #def1f3;
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app .container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background: #3aafa9;
+  min-height: 500px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.navbar {
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.navbar a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+  color: #2a7877;
+  margin: 0 15px;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: black;
+}
+
+.section-title {
+  color: white;
+  margin: 15px auto 40px;
+  text-align: center;
+}
+
+form {
+  height: 50px;
+  margin: 10px auto 50px;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  height: 100%;
+}
+
+input {
+  width: 80%;
+  padding: 0 18px;
+  background: #17242a;
+  color: #f9f9f9;
+  border: none;
+}
+
+input::placeholder {
+  color: #696f77;
+}
+
+button {
+  width: 20%;
+  background: #2a7877;
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+button:hover {
+  background: #def1f3;
+  color: #17242a;
+}
+
+.todo {
+  margin: 30px 0;
+  width: 100%;
+  background: #17242a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 25px;
+  opacity: 0.5;
+  transition: all linear 0.5s;
+}
+
+.todo:hover {
+  opacity: 1;
+}
+
+.todo p {
+  font-size: 20px;
+  color: white;
+}
+
+.todo p small {
+  font-size: 11px;
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+i {
+  cursor: pointer;
+  margin: 10px 0 10px 20px;
+  color: #def1f3;
+}
+
+i:hover {
+  color: white;
+}
